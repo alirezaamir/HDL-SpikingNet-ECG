@@ -1,9 +1,8 @@
 `timescale 1ns / 10ps
-module output_neuron(spikes_in, acks_out, clk, resetn, spike_out, ack_in);
+module output_neuron(spikes_in, acks_out, clk, resetn, spike_out);
 parameter data_bit = 7;
 
 input [7:0] spikes_in;
-input ack_in;
 input clk, resetn;
 output reg spike_out;
 output reg [7:0] acks_out;
@@ -15,10 +14,10 @@ wire enable;
 wire model_spike;
 wire [data_bit:0] ROM_out;
 
-IF_neuron IF0 (.clk(clk), .resetn(resetn), .input_current(ROM_out), .spike(model_spike));
+IF_neuron_out IF0 (.clk(clk), .resetn(resetn), .input_current(ROM_out), .spike(model_spike));
 defparam IF0.n_bit = data_bit;
 
-ROMFile ROM0 (.address(ROM_address), .data(ROM_out), .read_en(enable));
+ROMFile_out ROM0 (.address(ROM_address), .data(ROM_out), .read_en(enable));
 defparam ROM0.n_bit = data_bit;
 
 assign ROM_address = address;
@@ -70,7 +69,7 @@ endmodule
 
 
 
-module ROMFile( address , data , read_en);
+module ROMFile_out( address , data , read_en);
 parameter n_bit = 7;
 input [2:0] address;
 output [n_bit:0] data;
@@ -86,7 +85,7 @@ endmodule
 
 
 
-module IF_neuron(clk, resetn, input_current, spike);
+module IF_neuron_out(clk, resetn, input_current, spike);
 parameter n_bit = 7;
 parameter theta = 10'h1FF;
 parameter refractory = 50000;

@@ -1,4 +1,3 @@
-`timescale 1ns / 10ps
 module handler_block(spikes_in, ack_in, spike_out, address, acks_out);
 input [15:0] spikes_in;
 input ack_in;

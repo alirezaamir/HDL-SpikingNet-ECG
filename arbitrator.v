@@ -1,13 +1,14 @@
-module arbitrator(spikes_in, class_out, no_spike, end_process, resetn, clk);
-parameter duration = 1500000;
+module arbitrator(spikes_in, class_out, no_spike, end_process, resetn, clk, timer_en);
+parameter duration = 300;
 input clk, resetn;
 input [5:0] spikes_in;
+input timer_en;
 output wire no_spike;
 output wire end_process;
 output reg [1:0] class_out;
 
 wire spike_enable;
-reg [20:0] counter;
+reg [8:0] counter;
 
 assign spike_enable = (|spikes_in);
 assign no_spike = (|counter);
@@ -29,8 +30,10 @@ always@(posedge clk)
 begin
     if(resetn)
       counter <= duration;
-    else
+    else if(timer_en)
       counter <= counter-1;
+    else
+      counter <= counter;
 end
 
 endmodule
