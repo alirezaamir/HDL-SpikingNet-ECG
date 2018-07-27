@@ -77,10 +77,6 @@ input read_en;
 reg [n_bit:0] mem [0:7] ;
 assign data = read_en ? mem[address] : 0;
 
-initial
-begin
-$readmemb("output_weights.list", mem);
-end
 endmodule
 
 

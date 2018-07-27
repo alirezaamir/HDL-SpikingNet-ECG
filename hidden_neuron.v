@@ -17,9 +17,9 @@ output reg [3:0] addr_in00, addr_in01, addr_in02, addr_in03,
    addr_in12, addr_in13, addr_in14, addr_in15;
 output reg [15:0] acks_out;
 
-reg [2:0] mux_addr;
+reg [3:0] mux_addr;
 reg [3:0] mux_out;
-wire [6:0] ROM_address;
+wire [7:0] ROM_address;
 wire enable;
 
 wire model_spike;
@@ -149,16 +149,12 @@ endmodule
 
 module ROMFile_hidden( address , data , read_en);
 parameter n_bit = 7;
-input [6:0] address;
+input [7:0] address;
 output [n_bit:0] data;
 input read_en;
-reg [n_bit:0] mem [0:127] ;
+reg [n_bit:0] mem [0:255] ;
 assign data = read_en ? mem[address] : 0;
 
-initial
-begin
-$readmemb("hidden_weights.list", mem);
-end
 endmodule
 
 
