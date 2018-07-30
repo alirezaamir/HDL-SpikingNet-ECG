@@ -1,69 +1,25 @@
-`timescale 1ns / 10ps
-module output_neuron(spikes_in, acks_out, clk, resetn, spike_out);
+module output_neuron(spike_in, clk, resetn, spike_out, addr_in);
 parameter data_bit = 7;
 
-input [7:0] spikes_in;
+input spike_in;
 input clk, resetn;
-output reg spike_out;
-output reg [7:0] acks_out;
+output spike_out;
+input [2:0] addr_in;
 
-reg [2:0] address;
 wire [2:0] ROM_address;
+assign ROM_address = addr_in;
+
 wire enable;
 
-wire model_spike;
 wire [data_bit:0] ROM_out;
 
-IF_neuron_out IF0 (.clk(clk), .resetn(resetn), .input_current(ROM_out), .spike(model_spike));
+IF_neuron_out IF0 (.clk(clk), .resetn(resetn), .input_current(ROM_out), .spike(spike_out));
 defparam IF0.n_bit = data_bit;
 
 ROMFile_out ROM0 (.address(ROM_address), .data(ROM_out), .read_en(enable));
 defparam ROM0.n_bit = data_bit;
 
-assign ROM_address = address;
-assign enable = (|spikes_in);
-
-
-always@(spikes_in) begin
-    casex (spikes_in)
-      8'bxxxx_xxx1 : begin
-          address = 0;
-          acks_out = 8'h01;
-          end
-      8'bxxxx_xx10 : begin
-          address = 1;
-          acks_out = 8'h02;
-          end
-      8'bxxxx_x100 : begin
-          address = 2;
-          acks_out = 8'h04;
-          end
-      8'bxxxx_1000 : begin
-          address = 3;
-          acks_out = 8'h08;
-          end
-      8'bxxx1_0000 : begin
-          address = 4;
-          acks_out = 8'h10;
-          end
-      8'bxx10_0000 : begin
-          address = 5;
-          acks_out = 8'h20;
-          end
-      8'bx100_0000 : begin
-          address = 6;
-          acks_out = 8'h40;
-          end
-      8'b1000_0000 : begin
-          address = 7;
-          acks_out = 8'h80;
-          end
-      default : begin
-          address = 0;
-          acks_out = 8'h00;
-          end
-    endcase
-end
+assign enable = spike_in;
 
 endmodule
 
@@ -83,8 +39,7 @@ endmodule
 
 module IF_neuron_out(clk, resetn, input_current, spike);
 parameter n_bit = 7;
-parameter theta = 10'h1FF;
-parameter refractory = 50000;
+parameter theta = 10'b001110000;
 parameter max_bit = 10;
 
 input clk, resetn;
@@ -100,7 +55,11 @@ assign {overflow,add_out} = resetn ? 0 : (membrane_potential + input_current);
 assign spike = (membrane_potential > theta);
 
 always@(posedge clk) begin
-    membrane_potential <= add_out;
+    if (resetn | spike) begin
+      membrane_potential <= 0;
+    end
+    else
+      membrane_potential <= add_out;
 end
 
 endmodule

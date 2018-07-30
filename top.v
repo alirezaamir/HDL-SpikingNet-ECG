@@ -655,140 +655,140 @@ wire [15:0] in_spk_00, in_spk_01, in_spk_02, in_spk_03,
   in_spk_04, in_spk_05, in_spk_06, in_spk_07,
   in_spk_08, in_spk_09, in_spk_10, in_spk_11,
   in_spk_12, in_spk_13, in_spk_14, in_spk_15;
-assign in_spk_00 = {in_spk00_00, in_spk01_00, in_spk02_00, in_spk03_00,
-  in_spk04_00, in_spk05_00, in_spk06_00, in_spk07_00,
-  in_spk08_00, in_spk09_00, in_spk10_00, in_spk11_00,
-  in_spk12_00, in_spk13_00, in_spk14_00, in_spk15_00};
-assign in_spk_01 = {in_spk00_01, in_spk01_01, in_spk02_01, in_spk03_01,
-  in_spk04_01, in_spk05_01, in_spk06_01, in_spk07_01,
-  in_spk08_01, in_spk09_01, in_spk10_01, in_spk11_01,
-  in_spk12_01, in_spk13_01, in_spk14_01, in_spk15_01};
-assign in_spk_02 = {in_spk00_02, in_spk01_02, in_spk02_02, in_spk03_02,
-  in_spk04_02, in_spk05_02, in_spk06_02, in_spk07_02,
-  in_spk08_02, in_spk09_02, in_spk10_02, in_spk11_02,
-  in_spk12_02, in_spk13_02, in_spk14_02, in_spk15_02};
-assign in_spk_03 = {in_spk00_03, in_spk01_03, in_spk02_03, in_spk03_03,
-  in_spk04_03, in_spk05_03, in_spk06_03, in_spk07_03,
-  in_spk08_03, in_spk09_03, in_spk10_03, in_spk11_03,
-  in_spk12_03, in_spk13_03, in_spk14_03, in_spk15_03};
-assign in_spk_04 = {in_spk00_04, in_spk01_04, in_spk02_04, in_spk03_04,
-  in_spk04_04, in_spk05_04, in_spk06_04, in_spk07_04,
-  in_spk08_04, in_spk09_04, in_spk10_04, in_spk11_04,
-  in_spk12_04, in_spk13_04, in_spk14_04, in_spk15_04};
-assign in_spk_05 = {in_spk00_05, in_spk01_05, in_spk02_05, in_spk03_05,
-  in_spk04_05, in_spk05_05, in_spk06_05, in_spk07_05,
-  in_spk08_05, in_spk09_05, in_spk10_05, in_spk11_05,
-  in_spk12_05, in_spk13_05, in_spk14_05, in_spk15_05};
-assign in_spk_06 = {in_spk00_06, in_spk01_06, in_spk02_06, in_spk03_06,
-  in_spk04_06, in_spk05_06, in_spk06_06, in_spk07_06,
-  in_spk08_06, in_spk09_06, in_spk10_06, in_spk11_06,
-  in_spk12_06, in_spk13_06, in_spk14_06, in_spk15_06};
-assign in_spk_07 = {in_spk00_07, in_spk01_07, in_spk02_07, in_spk03_07,
-  in_spk04_07, in_spk05_07, in_spk06_07, in_spk07_07,
-  in_spk08_07, in_spk09_07, in_spk10_07, in_spk11_07,
-  in_spk12_07, in_spk13_07, in_spk14_07, in_spk15_07};
-assign in_spk_08 = {in_spk00_08, in_spk01_08, in_spk02_08, in_spk03_08,
-  in_spk04_08, in_spk05_08, in_spk06_08, in_spk07_08,
-  in_spk08_08, in_spk09_08, in_spk10_08, in_spk11_08,
-  in_spk12_08, in_spk13_08, in_spk14_08, in_spk15_08};
-assign in_spk_09 = {in_spk00_09, in_spk01_09, in_spk02_09, in_spk03_09,
-  in_spk04_09, in_spk05_09, in_spk06_09, in_spk07_09,
-  in_spk08_09, in_spk09_09, in_spk10_09, in_spk11_09,
-  in_spk12_09, in_spk13_09, in_spk14_09, in_spk15_09};
-assign in_spk_10 = {in_spk00_10, in_spk01_10, in_spk02_10, in_spk03_10,
-  in_spk04_10, in_spk05_10, in_spk06_10, in_spk07_10,
-  in_spk08_10, in_spk09_10, in_spk10_10, in_spk11_10,
-  in_spk12_10, in_spk13_10, in_spk14_10, in_spk15_10};
-assign in_spk_11 = {in_spk00_11, in_spk01_11, in_spk02_11, in_spk03_11,
-  in_spk04_11, in_spk05_11, in_spk06_11, in_spk07_11,
-  in_spk08_11, in_spk09_11, in_spk10_11, in_spk11_11,
-  in_spk12_11, in_spk13_11, in_spk14_11, in_spk15_11};
-assign in_spk_12 = {in_spk00_12, in_spk01_12, in_spk02_12, in_spk03_12,
-  in_spk04_12, in_spk05_12, in_spk06_12, in_spk07_12,
-  in_spk08_12, in_spk09_12, in_spk10_12, in_spk11_12,
-  in_spk12_12, in_spk13_12, in_spk14_12, in_spk15_12};
-assign in_spk_13 = {in_spk00_13, in_spk01_13, in_spk02_13, in_spk03_13,
-  in_spk04_13, in_spk05_13, in_spk06_13, in_spk07_13,
-  in_spk08_13, in_spk09_13, in_spk10_13, in_spk11_13,
-  in_spk12_13, in_spk13_13, in_spk14_13, in_spk15_13};
-assign in_spk_14 = {in_spk00_14, in_spk01_14, in_spk02_14, in_spk03_14,
-  in_spk04_14, in_spk05_14, in_spk06_14, in_spk07_14,
-  in_spk08_14, in_spk09_14, in_spk10_14, in_spk11_14,
-  in_spk12_14, in_spk13_14, in_spk14_14, in_spk15_14};
-assign in_spk_15 = {in_spk00_15, in_spk01_15, in_spk02_15, in_spk03_15,
-  in_spk04_15, in_spk05_15, in_spk06_15, in_spk07_15,
-  in_spk08_15, in_spk09_15, in_spk10_15, in_spk11_15,
-  in_spk12_15, in_spk13_15, in_spk14_15, in_spk15_15};
+assign in_spk_00 = {in_spk15_00, in_spk14_00, in_spk13_00, in_spk12_00,
+	in_spk11_00, in_spk10_00, in_spk09_00, in_spk08_00,
+	in_spk07_00, in_spk06_00, in_spk05_00, in_spk04_00,
+	in_spk03_00, in_spk02_00, in_spk01_00, in_spk00_00};
+assign in_spk_01 = {in_spk15_01, in_spk14_01, in_spk13_01, in_spk12_01,
+	in_spk11_01, in_spk10_01, in_spk09_01, in_spk08_01,
+	in_spk07_01, in_spk06_01, in_spk05_01, in_spk04_01,
+	in_spk03_01, in_spk02_01, in_spk01_01, in_spk00_01};
+assign in_spk_02 = {in_spk15_02, in_spk14_02, in_spk13_02, in_spk12_02,
+	in_spk11_02, in_spk10_02, in_spk09_02, in_spk08_02,
+	in_spk07_02, in_spk06_02, in_spk05_02, in_spk04_02,
+	in_spk03_02, in_spk02_02, in_spk01_02, in_spk00_02};
+assign in_spk_03 = {in_spk15_03, in_spk14_03, in_spk13_03, in_spk12_03,
+	in_spk11_03, in_spk10_03, in_spk09_03, in_spk08_03,
+	in_spk07_03, in_spk06_03, in_spk05_03, in_spk04_03,
+	in_spk03_03, in_spk02_03, in_spk01_03, in_spk00_03};
+assign in_spk_04 = {in_spk15_04, in_spk14_04, in_spk13_04, in_spk12_04,
+	in_spk11_04, in_spk10_04, in_spk09_04, in_spk08_04,
+	in_spk07_04, in_spk06_04, in_spk05_04, in_spk04_04,
+	in_spk03_04, in_spk02_04, in_spk01_04, in_spk00_04};
+assign in_spk_05 = {in_spk15_05, in_spk14_05, in_spk13_05, in_spk12_05,
+	in_spk11_05, in_spk10_05, in_spk09_05, in_spk08_05,
+	in_spk07_05, in_spk06_05, in_spk05_05, in_spk04_05,
+	in_spk03_05, in_spk02_05, in_spk01_05, in_spk00_05};
+assign in_spk_06 = {in_spk15_06, in_spk14_06, in_spk13_06, in_spk12_06,
+	in_spk11_06, in_spk10_06, in_spk09_06, in_spk08_06,
+	in_spk07_06, in_spk06_06, in_spk05_06, in_spk04_06,
+	in_spk03_06, in_spk02_06, in_spk01_06, in_spk00_06};
+assign in_spk_07 = {in_spk15_07, in_spk14_07, in_spk13_07, in_spk12_07,
+	in_spk11_07, in_spk10_07, in_spk09_07, in_spk08_07,
+	in_spk07_07, in_spk06_07, in_spk05_07, in_spk04_07,
+	in_spk03_07, in_spk02_07, in_spk01_07, in_spk00_07};
+assign in_spk_08 = {in_spk15_08, in_spk14_08, in_spk13_08, in_spk12_08,
+	in_spk11_08, in_spk10_08, in_spk09_08, in_spk08_08,
+	in_spk07_08, in_spk06_08, in_spk05_08, in_spk04_08,
+	in_spk03_08, in_spk02_08, in_spk01_08, in_spk00_08};
+assign in_spk_09 = {in_spk15_09, in_spk14_09, in_spk13_09, in_spk12_09,
+	in_spk11_09, in_spk10_09, in_spk09_09, in_spk08_09,
+	in_spk07_09, in_spk06_09, in_spk05_09, in_spk04_09,
+	in_spk03_09, in_spk02_09, in_spk01_09, in_spk00_09};
+assign in_spk_10 = {in_spk15_10, in_spk14_10, in_spk13_10, in_spk12_10,
+	in_spk11_10, in_spk10_10, in_spk09_10, in_spk08_10,
+	in_spk07_10, in_spk06_10, in_spk05_10, in_spk04_10,
+	in_spk03_10, in_spk02_10, in_spk01_10, in_spk00_10};
+assign in_spk_11 = {in_spk15_11, in_spk14_11, in_spk13_11, in_spk12_11,
+	in_spk11_11, in_spk10_11, in_spk09_11, in_spk08_11,
+	in_spk07_11, in_spk06_11, in_spk05_11, in_spk04_11,
+	in_spk03_11, in_spk02_11, in_spk01_11, in_spk00_11};
+assign in_spk_12 = {in_spk15_12, in_spk14_12, in_spk13_12, in_spk12_12,
+	in_spk11_12, in_spk10_12, in_spk09_12, in_spk08_12,
+	in_spk07_12, in_spk06_12, in_spk05_12, in_spk04_12,
+	in_spk03_12, in_spk02_12, in_spk01_12, in_spk00_12};
+assign in_spk_13 = {in_spk15_13, in_spk14_13, in_spk13_13, in_spk12_13,
+	in_spk11_13, in_spk10_13, in_spk09_13, in_spk08_13,
+	in_spk07_13, in_spk06_13, in_spk05_13, in_spk04_13,
+	in_spk03_13, in_spk02_13, in_spk01_13, in_spk00_13};
+assign in_spk_14 = {in_spk15_14, in_spk14_14, in_spk13_14, in_spk12_14,
+	in_spk11_14, in_spk10_14, in_spk09_14, in_spk08_14,
+	in_spk07_14, in_spk06_14, in_spk05_14, in_spk04_14,
+	in_spk03_14, in_spk02_14, in_spk01_14, in_spk00_14};
+assign in_spk_15 = {in_spk15_15, in_spk14_15, in_spk13_15, in_spk12_15,
+	in_spk11_15, in_spk10_15, in_spk09_15, in_spk08_15,
+	in_spk07_15, in_spk06_15, in_spk05_15, in_spk04_15,
+	in_spk03_15, in_spk02_15, in_spk01_15, in_spk00_15};
 
 wire [15:0] in_ack_00, in_ack_01, in_ack_02, in_ack_03,
 	in_ack_04, in_ack_05, in_ack_06, in_ack_07,
 	in_ack_08, in_ack_09, in_ack_10, in_ack_11,
 	in_ack_12, in_ack_13, in_ack_14, in_ack_15;
 
-assign in_ack_00 = {in_ack00_00, in_ack01_00, in_ack02_00, in_ack03_00,
-	in_ack04_00, in_ack05_00, in_ack06_00, in_ack07_00,
-	in_ack08_00, in_ack09_00, in_ack10_00, in_ack11_00,
-	in_ack12_00, in_ack13_00, in_ack14_00, in_ack15_00};
-assign in_ack_01 = {in_ack00_01, in_ack01_01, in_ack02_01, in_ack03_01,
-	in_ack04_01, in_ack05_01, in_ack06_01, in_ack07_01,
-	in_ack08_01, in_ack09_01, in_ack10_01, in_ack11_01,
-	in_ack12_01, in_ack13_01, in_ack14_01, in_ack15_01};
-assign in_ack_02 = {in_ack00_02, in_ack01_02, in_ack02_02, in_ack03_02,
-	in_ack04_02, in_ack05_02, in_ack06_02, in_ack07_02,
-	in_ack08_02, in_ack09_02, in_ack10_02, in_ack11_02,
-	in_ack12_02, in_ack13_02, in_ack14_02, in_ack15_02};
-assign in_ack_03 = {in_ack00_03, in_ack01_03, in_ack02_03, in_ack03_03,
-	in_ack04_03, in_ack05_03, in_ack06_03, in_ack07_03,
-	in_ack08_03, in_ack09_03, in_ack10_03, in_ack11_03,
-	in_ack12_03, in_ack13_03, in_ack14_03, in_ack15_03};
-assign in_ack_04 = {in_ack00_04, in_ack01_04, in_ack02_04, in_ack03_04,
-	in_ack04_04, in_ack05_04, in_ack06_04, in_ack07_04,
-	in_ack08_04, in_ack09_04, in_ack10_04, in_ack11_04,
-	in_ack12_04, in_ack13_04, in_ack14_04, in_ack15_04};
-assign in_ack_05 = {in_ack00_05, in_ack01_05, in_ack02_05, in_ack03_05,
-	in_ack04_05, in_ack05_05, in_ack06_05, in_ack07_05,
-	in_ack08_05, in_ack09_05, in_ack10_05, in_ack11_05,
-	in_ack12_05, in_ack13_05, in_ack14_05, in_ack15_05};
-assign in_ack_06 = {in_ack00_06, in_ack01_06, in_ack02_06, in_ack03_06,
-	in_ack04_06, in_ack05_06, in_ack06_06, in_ack07_06,
-	in_ack08_06, in_ack09_06, in_ack10_06, in_ack11_06,
-	in_ack12_06, in_ack13_06, in_ack14_06, in_ack15_06};
-assign in_ack_07 = {in_ack00_07, in_ack01_07, in_ack02_07, in_ack03_07,
-	in_ack04_07, in_ack05_07, in_ack06_07, in_ack07_07,
-	in_ack08_07, in_ack09_07, in_ack10_07, in_ack11_07,
-	in_ack12_07, in_ack13_07, in_ack14_07, in_ack15_07};
-assign in_ack_08 = {in_ack00_08, in_ack01_08, in_ack02_08, in_ack03_08,
-	in_ack04_08, in_ack05_08, in_ack06_08, in_ack07_08,
-	in_ack08_08, in_ack09_08, in_ack10_08, in_ack11_08,
-	in_ack12_08, in_ack13_08, in_ack14_08, in_ack15_08};
-assign in_ack_09 = {in_ack00_09, in_ack01_09, in_ack02_09, in_ack03_09,
-	in_ack04_09, in_ack05_09, in_ack06_09, in_ack07_09,
-	in_ack08_09, in_ack09_09, in_ack10_09, in_ack11_09,
-	in_ack12_09, in_ack13_09, in_ack14_09, in_ack15_09};
-assign in_ack_10 = {in_ack00_10, in_ack01_10, in_ack02_10, in_ack03_10,
-	in_ack04_10, in_ack05_10, in_ack06_10, in_ack07_10,
-	in_ack08_10, in_ack09_10, in_ack10_10, in_ack11_10,
-	in_ack12_10, in_ack13_10, in_ack14_10, in_ack15_10};
-assign in_ack_11 = {in_ack00_11, in_ack01_11, in_ack02_11, in_ack03_11,
-	in_ack04_11, in_ack05_11, in_ack06_11, in_ack07_11,
-	in_ack08_11, in_ack09_11, in_ack10_11, in_ack11_11,
-	in_ack12_11, in_ack13_11, in_ack14_11, in_ack15_11};
-assign in_ack_12 = {in_ack00_12, in_ack01_12, in_ack02_12, in_ack03_12,
-	in_ack04_12, in_ack05_12, in_ack06_12, in_ack07_12,
-	in_ack08_12, in_ack09_12, in_ack10_12, in_ack11_12,
-	in_ack12_12, in_ack13_12, in_ack14_12, in_ack15_12};
-assign in_ack_13 = {in_ack00_13, in_ack01_13, in_ack02_13, in_ack03_13,
-	in_ack04_13, in_ack05_13, in_ack06_13, in_ack07_13,
-	in_ack08_13, in_ack09_13, in_ack10_13, in_ack11_13,
-	in_ack12_13, in_ack13_13, in_ack14_13, in_ack15_13};
-assign in_ack_14 = {in_ack00_14, in_ack01_14, in_ack02_14, in_ack03_14,
-	in_ack04_14, in_ack05_14, in_ack06_14, in_ack07_14,
-	in_ack08_14, in_ack09_14, in_ack10_14, in_ack11_14,
-	in_ack12_14, in_ack13_14, in_ack14_14, in_ack15_14};
-assign in_ack_15 = {in_ack00_15, in_ack01_15, in_ack02_15, in_ack03_15,
-	in_ack04_15, in_ack05_15, in_ack06_15, in_ack07_15,
-	in_ack08_15, in_ack09_15, in_ack10_15, in_ack11_15,
-	in_ack12_15, in_ack13_15, in_ack14_15, in_ack15_15};
+assign {in_ack15_00, in_ack14_00, in_ack13_00, in_ack12_00,
+	in_ack11_00, in_ack10_00, in_ack09_00, in_ack08_00,
+	in_ack07_00, in_ack06_00, in_ack05_00, in_ack04_00,
+	in_ack03_00, in_ack02_00, in_ack01_00, in_ack00_00} = in_ack_00;
+assign {in_ack15_01, in_ack14_01, in_ack13_01, in_ack12_01,
+	in_ack11_01, in_ack10_01, in_ack09_01, in_ack08_01,
+	in_ack07_01, in_ack06_01, in_ack05_01, in_ack04_01,
+	in_ack03_01, in_ack02_01, in_ack01_01, in_ack00_01} = in_ack_01;
+assign {in_ack15_02, in_ack14_02, in_ack13_02, in_ack12_02,
+	in_ack11_02, in_ack10_02, in_ack09_02, in_ack08_02,
+	in_ack07_02, in_ack06_02, in_ack05_02, in_ack04_02,
+	in_ack03_02, in_ack02_02, in_ack01_02, in_ack00_02} = in_ack_02;
+assign {in_ack15_03, in_ack14_03, in_ack13_03, in_ack12_03,
+	in_ack11_03, in_ack10_03, in_ack09_03, in_ack08_03,
+	in_ack07_03, in_ack06_03, in_ack05_03, in_ack04_03,
+	in_ack03_03, in_ack02_03, in_ack01_03, in_ack00_03} = in_ack_03;
+assign {in_ack15_04, in_ack14_04, in_ack13_04, in_ack12_04,
+	in_ack11_04, in_ack10_04, in_ack09_04, in_ack08_04,
+	in_ack07_04, in_ack06_04, in_ack05_04, in_ack04_04,
+	in_ack03_04, in_ack02_04, in_ack01_04, in_ack00_04} = in_ack_04;
+assign {in_ack15_05, in_ack14_05, in_ack13_05, in_ack12_05,
+	in_ack11_05, in_ack10_05, in_ack09_05, in_ack08_05,
+	in_ack07_05, in_ack06_05, in_ack05_05, in_ack04_05,
+	in_ack03_05, in_ack02_05, in_ack01_05, in_ack00_05} = in_ack_05;
+assign {in_ack15_06, in_ack14_06, in_ack13_06, in_ack12_06,
+	in_ack11_06, in_ack10_06, in_ack09_06, in_ack08_06,
+	in_ack07_06, in_ack06_06, in_ack05_06, in_ack04_06,
+	in_ack03_06, in_ack02_06, in_ack01_06, in_ack00_06} = in_ack_06;
+assign {in_ack15_07, in_ack14_07, in_ack13_07, in_ack12_07,
+	in_ack11_07, in_ack10_07, in_ack09_07, in_ack08_07,
+	in_ack07_07, in_ack06_07, in_ack05_07, in_ack04_07,
+	in_ack03_07, in_ack02_07, in_ack01_07, in_ack00_07} = in_ack_07;
+assign {in_ack15_08, in_ack14_08, in_ack13_08, in_ack12_08,
+	in_ack11_08, in_ack10_08, in_ack09_08, in_ack08_08,
+	in_ack07_08, in_ack06_08, in_ack05_08, in_ack04_08,
+	in_ack03_08, in_ack02_08, in_ack01_08, in_ack00_08} = in_ack_08;
+assign {in_ack15_09, in_ack14_09, in_ack13_09, in_ack12_09,
+	in_ack11_09, in_ack10_09, in_ack09_09, in_ack08_09,
+	in_ack07_09, in_ack06_09, in_ack05_09, in_ack04_09,
+	in_ack03_09, in_ack02_09, in_ack01_09, in_ack00_09} = in_ack_09;
+assign {in_ack15_10, in_ack14_10, in_ack13_10, in_ack12_10,
+	in_ack11_10, in_ack10_10, in_ack09_10, in_ack08_10,
+	in_ack07_10, in_ack06_10, in_ack05_10, in_ack04_10,
+	in_ack03_10, in_ack02_10, in_ack01_10, in_ack00_10} = in_ack_10;
+assign {in_ack15_11, in_ack14_11, in_ack13_11, in_ack12_11,
+	in_ack11_11, in_ack10_11, in_ack09_11, in_ack08_11,
+	in_ack07_11, in_ack06_11, in_ack05_11, in_ack04_11,
+	in_ack03_11, in_ack02_11, in_ack01_11, in_ack00_11} = in_ack_11;
+assign {in_ack15_12, in_ack14_12, in_ack13_12, in_ack12_12,
+	in_ack11_12, in_ack10_12, in_ack09_12, in_ack08_12,
+	in_ack07_12, in_ack06_12, in_ack05_12, in_ack04_12,
+	in_ack03_12, in_ack02_12, in_ack01_12, in_ack00_12} = in_ack_12;
+assign {in_ack15_13, in_ack14_13, in_ack13_13, in_ack12_13,
+	in_ack11_13, in_ack10_13, in_ack09_13, in_ack08_13,
+	in_ack07_13, in_ack06_13, in_ack05_13, in_ack04_13,
+	in_ack03_13, in_ack02_13, in_ack01_13, in_ack00_13} = in_ack_13;
+assign {in_ack15_14, in_ack14_14, in_ack13_14, in_ack12_14,
+	in_ack11_14, in_ack10_14, in_ack09_14, in_ack08_14,
+	in_ack07_14, in_ack06_14, in_ack05_14, in_ack04_14,
+	in_ack03_14, in_ack02_14, in_ack01_14, in_ack00_14} = in_ack_14;
+assign {in_ack15_15, in_ack14_15, in_ack13_15, in_ack12_15,
+	in_ack11_15, in_ack10_15, in_ack09_15, in_ack08_15,
+	in_ack07_15, in_ack06_15, in_ack05_15, in_ack04_15,
+	in_ack03_15, in_ack02_15, in_ack01_15, in_ack00_15} = in_ack_15;
 
 wire [3:0] hb_addr_00, hb_addr_01, hb_addr_02, hb_addr_03,
 	hb_addr_04, hb_addr_05, hb_addr_06, hb_addr_07,
@@ -806,132 +806,105 @@ wire hb_ack_00, hb_ack_01, hb_ack_02, hb_ack_03,
 	hb_ack_12, hb_ack_13, hb_ack_14, hb_ack_15;
 
 handler_block h_block00 (.spikes_in(in_spk_00), .ack_in(hb_ack_00),
-	.spike_out(hb_spk_00), .address(hb_addr_00), .acks_out(in_spk_00));
+	.spike_out(hb_spk_00), .address(hb_addr_00), .acks_out(in_ack_00));
 handler_block h_block01 (.spikes_in(in_spk_01), .ack_in(hb_ack_01),
-	.spike_out(hb_spk_01), .address(hb_addr_01), .acks_out(in_spk_01));
+	.spike_out(hb_spk_01), .address(hb_addr_01), .acks_out(in_ack_01));
 handler_block h_block02 (.spikes_in(in_spk_02), .ack_in(hb_ack_02),
-	.spike_out(hb_spk_02), .address(hb_addr_02), .acks_out(in_spk_02));
+	.spike_out(hb_spk_02), .address(hb_addr_02), .acks_out(in_ack_02));
 handler_block h_block03 (.spikes_in(in_spk_03), .ack_in(hb_ack_03),
-	.spike_out(hb_spk_03), .address(hb_addr_03), .acks_out(in_spk_03));
+	.spike_out(hb_spk_03), .address(hb_addr_03), .acks_out(in_ack_03));
 handler_block h_block04 (.spikes_in(in_spk_04), .ack_in(hb_ack_04),
-	.spike_out(hb_spk_04), .address(hb_addr_04), .acks_out(in_spk_04));
+	.spike_out(hb_spk_04), .address(hb_addr_04), .acks_out(in_ack_04));
 handler_block h_block05 (.spikes_in(in_spk_05), .ack_in(hb_ack_05),
-	.spike_out(hb_spk_05), .address(hb_addr_05), .acks_out(in_spk_05));
+	.spike_out(hb_spk_05), .address(hb_addr_05), .acks_out(in_ack_05));
 handler_block h_block06 (.spikes_in(in_spk_06), .ack_in(hb_ack_06),
-	.spike_out(hb_spk_06), .address(hb_addr_06), .acks_out(in_spk_06));
+	.spike_out(hb_spk_06), .address(hb_addr_06), .acks_out(in_ack_06));
 handler_block h_block07 (.spikes_in(in_spk_07), .ack_in(hb_ack_07),
-	.spike_out(hb_spk_07), .address(hb_addr_07), .acks_out(in_spk_07));
+	.spike_out(hb_spk_07), .address(hb_addr_07), .acks_out(in_ack_07));
 handler_block h_block08 (.spikes_in(in_spk_08), .ack_in(hb_ack_08),
-	.spike_out(hb_spk_08), .address(hb_addr_08), .acks_out(in_spk_08));
+	.spike_out(hb_spk_08), .address(hb_addr_08), .acks_out(in_ack_08));
 handler_block h_block09 (.spikes_in(in_spk_09), .ack_in(hb_ack_09),
-	.spike_out(hb_spk_09), .address(hb_addr_09), .acks_out(in_spk_09));
+	.spike_out(hb_spk_09), .address(hb_addr_09), .acks_out(in_ack_09));
 handler_block h_block10 (.spikes_in(in_spk_10), .ack_in(hb_ack_10),
-	.spike_out(hb_spk_10), .address(hb_addr_10), .acks_out(in_spk_10));
+	.spike_out(hb_spk_10), .address(hb_addr_10), .acks_out(in_ack_10));
 handler_block h_block11 (.spikes_in(in_spk_11), .ack_in(hb_ack_11),
-	.spike_out(hb_spk_11), .address(hb_addr_11), .acks_out(in_spk_11));
+	.spike_out(hb_spk_11), .address(hb_addr_11), .acks_out(in_ack_11));
 handler_block h_block12 (.spikes_in(in_spk_12), .ack_in(hb_ack_12),
-	.spike_out(hb_spk_12), .address(hb_addr_12), .acks_out(in_spk_12));
+	.spike_out(hb_spk_12), .address(hb_addr_12), .acks_out(in_ack_12));
 handler_block h_block13 (.spikes_in(in_spk_13), .ack_in(hb_ack_13),
-	.spike_out(hb_spk_13), .address(hb_addr_13), .acks_out(in_spk_13));
+	.spike_out(hb_spk_13), .address(hb_addr_13), .acks_out(in_ack_13));
 handler_block h_block14 (.spikes_in(in_spk_14), .ack_in(hb_ack_14),
-	.spike_out(hb_spk_14), .address(hb_addr_14), .acks_out(in_spk_14));
+	.spike_out(hb_spk_14), .address(hb_addr_14), .acks_out(in_ack_14));
 handler_block h_block15 (.spikes_in(in_spk_15), .ack_in(hb_ack_15),
-	.spike_out(hb_spk_15), .address(hb_addr_15), .acks_out(in_spk_15));
+	.spike_out(hb_spk_15), .address(hb_addr_15), .acks_out(in_ack_15));
 
 wire [15:0] hb_spk;
-assign hb_spk = {hb_spk_00, hb_spk_01, hb_spk_02, hb_spk_03,
-  hb_spk_04, hb_spk_05, hb_spk_06, hb_spk_07,
-  hb_spk_08, hb_spk_09, hb_spk_10, hb_spk_11,
-  hb_spk_12, hb_spk_13, hb_spk_14, hb_spk_15};
+assign hb_spk = {hb_spk_15, hb_spk_14, hb_spk_13, hb_spk_12,
+	 hb_spk_11, hb_spk_10, hb_spk_09, hb_spk_08,
+	 hb_spk_07, hb_spk_06, hb_spk_05, hb_spk_04,
+	 hb_spk_03, hb_spk_02, hb_spk_01, hb_spk_00};
 
 wire [15:0] hb_ack;
-assign hb_ack = {hb_ack_00, hb_ack_01, hb_ack_02, hb_ack_03,
-  hb_ack_04, hb_ack_05, hb_ack_06, hb_ack_07,
-  hb_ack_08, hb_ack_09, hb_ack_10, hb_ack_11,
-  hb_ack_12, hb_ack_13, hb_ack_14, hb_ack_15};
+assign {hb_ack_15, hb_ack_14, hb_ack_13, hb_ack_12,
+	hb_ack_11, hb_ack_10, hb_ack_09, hb_ack_08,
+	hb_ack_07, hb_ack_06, hb_ack_05, hb_ack_04,
+	hb_ack_03, hb_ack_02, hb_ack_01, hb_ack_00} = hb_ack;
 
 wire hid_spk0, hid_spk1, hid_spk2, hid_spk3, hid_spk4, hid_spk5, hid_spk6, hid_spk7;
 wire hid_ack0, hid_ack1, hid_ack2, hid_ack3, hid_ack4, hid_ack5, hid_ack6, hid_ack7;
 
-hidden_neuron neuron_hid0(.spikes_in(hb_spk), .acks_out(hb_ack),
-	.clk(clk), .resetn(resetn), .spike_out(hid_spk0), .ack_in(hid_ack0), .timer_en(timer_en),
+wire [7:0] ctrl_addr;
+hidden_controler hid_controler(.clk(clk), .resetn(resetn), .spikes_in(hb_spk),
+	.acks_out(hb_ack), .addr_out(ctrl_addr), .spike_out(ctrl_spk),
 	.addr_in00(hb_addr_00), .addr_in01(hb_addr_01), .addr_in02(hb_addr_02), .addr_in03(hb_addr_03),
 	.addr_in04(hb_addr_04), .addr_in05(hb_addr_05), .addr_in06(hb_addr_06), .addr_in07(hb_addr_07),
 	.addr_in08(hb_addr_08), .addr_in09(hb_addr_09), .addr_in10(hb_addr_10), .addr_in11(hb_addr_11),
-	.addr_in12(hb_addr_12), .addr_in13(hb_addr_13), .addr_in14(hb_addr_14), .addr_in15(hb_addr_15)
-	);
-hidden_neuron neuron_hid1(.spikes_in(hb_spk), .acks_out(hb_ack),
-	.clk(clk), .resetn(resetn), .spike_out(hid_spk1), .ack_in(hid_ack1), .timer_en(timer_en),
-	.addr_in00(hb_addr_00), .addr_in01(hb_addr_01), .addr_in02(hb_addr_02), .addr_in03(hb_addr_03),
-	.addr_in04(hb_addr_04), .addr_in05(hb_addr_05), .addr_in06(hb_addr_06), .addr_in07(hb_addr_07),
-	.addr_in08(hb_addr_08), .addr_in09(hb_addr_09), .addr_in10(hb_addr_10), .addr_in11(hb_addr_11),
-	.addr_in12(hb_addr_12), .addr_in13(hb_addr_13), .addr_in14(hb_addr_14), .addr_in15(hb_addr_15)
-	);
-hidden_neuron neuron_hid2(.spikes_in(hb_spk), .acks_out(hb_ack),
-	.clk(clk), .resetn(resetn), .spike_out(hid_spk2), .ack_in(hid_ack2), .timer_en(timer_en),
-	.addr_in00(hb_addr_00), .addr_in01(hb_addr_01), .addr_in02(hb_addr_02), .addr_in03(hb_addr_03),
-	.addr_in04(hb_addr_04), .addr_in05(hb_addr_05), .addr_in06(hb_addr_06), .addr_in07(hb_addr_07),
-	.addr_in08(hb_addr_08), .addr_in09(hb_addr_09), .addr_in10(hb_addr_10), .addr_in11(hb_addr_11),
-	.addr_in12(hb_addr_12), .addr_in13(hb_addr_13), .addr_in14(hb_addr_14), .addr_in15(hb_addr_15)
-	);
-hidden_neuron neuron_hid3(.spikes_in(hb_spk), .acks_out(hb_ack),
-	.clk(clk), .resetn(resetn), .spike_out(hid_spk3), .ack_in(hid_ack3), .timer_en(timer_en),
-	.addr_in00(hb_addr_00), .addr_in01(hb_addr_01), .addr_in02(hb_addr_02), .addr_in03(hb_addr_03),
-	.addr_in04(hb_addr_04), .addr_in05(hb_addr_05), .addr_in06(hb_addr_06), .addr_in07(hb_addr_07),
-	.addr_in08(hb_addr_08), .addr_in09(hb_addr_09), .addr_in10(hb_addr_10), .addr_in11(hb_addr_11),
-	.addr_in12(hb_addr_12), .addr_in13(hb_addr_13), .addr_in14(hb_addr_14), .addr_in15(hb_addr_15)
-	);
-hidden_neuron neuron_hid4(.spikes_in(hb_spk), .acks_out(hb_ack),
-	.clk(clk), .resetn(resetn), .spike_out(hid_spk4), .ack_in(hid_ack4), .timer_en(timer_en),
-	.addr_in00(hb_addr_00), .addr_in01(hb_addr_01), .addr_in02(hb_addr_02), .addr_in03(hb_addr_03),
-	.addr_in04(hb_addr_04), .addr_in05(hb_addr_05), .addr_in06(hb_addr_06), .addr_in07(hb_addr_07),
-	.addr_in08(hb_addr_08), .addr_in09(hb_addr_09), .addr_in10(hb_addr_10), .addr_in11(hb_addr_11),
-	.addr_in12(hb_addr_12), .addr_in13(hb_addr_13), .addr_in14(hb_addr_14), .addr_in15(hb_addr_15)
-	);
-hidden_neuron neuron_hid5(.spikes_in(hb_spk), .acks_out(hb_ack),
-	.clk(clk), .resetn(resetn), .spike_out(hid_spk5), .ack_in(hid_ack5), .timer_en(timer_en),
-	.addr_in00(hb_addr_00), .addr_in01(hb_addr_01), .addr_in02(hb_addr_02), .addr_in03(hb_addr_03),
-	.addr_in04(hb_addr_04), .addr_in05(hb_addr_05), .addr_in06(hb_addr_06), .addr_in07(hb_addr_07),
-	.addr_in08(hb_addr_08), .addr_in09(hb_addr_09), .addr_in10(hb_addr_10), .addr_in11(hb_addr_11),
-	.addr_in12(hb_addr_12), .addr_in13(hb_addr_13), .addr_in14(hb_addr_14), .addr_in15(hb_addr_15)
-	);
-hidden_neuron neuron_hid6(.spikes_in(hb_spk), .acks_out(hb_ack),
-	.clk(clk), .resetn(resetn), .spike_out(hid_spk6), .ack_in(hid_ack6), .timer_en(timer_en),
-	.addr_in00(hb_addr_00), .addr_in01(hb_addr_01), .addr_in02(hb_addr_02), .addr_in03(hb_addr_03),
-	.addr_in04(hb_addr_04), .addr_in05(hb_addr_05), .addr_in06(hb_addr_06), .addr_in07(hb_addr_07),
-	.addr_in08(hb_addr_08), .addr_in09(hb_addr_09), .addr_in10(hb_addr_10), .addr_in11(hb_addr_11),
-	.addr_in12(hb_addr_12), .addr_in13(hb_addr_13), .addr_in14(hb_addr_14), .addr_in15(hb_addr_15)
-	);
-hidden_neuron neuron_hid7(.spikes_in(hb_spk), .acks_out(hb_ack),
-	.clk(clk), .resetn(resetn), .spike_out(hid_spk7), .ack_in(hid_ack7), .timer_en(timer_en),
-	.addr_in00(hb_addr_00), .addr_in01(hb_addr_01), .addr_in02(hb_addr_02), .addr_in03(hb_addr_03),
-	.addr_in04(hb_addr_04), .addr_in05(hb_addr_05), .addr_in06(hb_addr_06), .addr_in07(hb_addr_07),
-	.addr_in08(hb_addr_08), .addr_in09(hb_addr_09), .addr_in10(hb_addr_10), .addr_in11(hb_addr_11),
-	.addr_in12(hb_addr_12), .addr_in13(hb_addr_13), .addr_in14(hb_addr_14), .addr_in15(hb_addr_15)
-	);
+	.addr_in12(hb_addr_12), .addr_in13(hb_addr_13), .addr_in14(hb_addr_14), .addr_in15(hb_addr_15));
+
+hidden_neuron neuron_hid0(.spike_in(ctrl_spk), .addr_in(ctrl_addr),
+  .clk(clk), .resetn(resetn), .spike_out(hid_spk0), .ack_in(hid_ack0), .timer_en(timer_en));
+hidden_neuron neuron_hid1(.spike_in(ctrl_spk), .addr_in(ctrl_addr),
+	.clk(clk), .resetn(resetn), .spike_out(hid_spk1), .ack_in(hid_ack1), .timer_en(timer_en));
+hidden_neuron neuron_hid2(.spike_in(ctrl_spk), .addr_in(ctrl_addr),
+	.clk(clk), .resetn(resetn), .spike_out(hid_spk2), .ack_in(hid_ack2), .timer_en(timer_en));
+hidden_neuron neuron_hid3(.spike_in(ctrl_spk), .addr_in(ctrl_addr),
+	.clk(clk), .resetn(resetn), .spike_out(hid_spk3), .ack_in(hid_ack3), .timer_en(timer_en));
+hidden_neuron neuron_hid4(.spike_in(ctrl_spk), .addr_in(ctrl_addr),
+	.clk(clk), .resetn(resetn), .spike_out(hid_spk4), .ack_in(hid_ack4), .timer_en(timer_en));
+hidden_neuron neuron_hid5(.spike_in(ctrl_spk), .addr_in(ctrl_addr),
+	.clk(clk), .resetn(resetn), .spike_out(hid_spk5), .ack_in(hid_ack5), .timer_en(timer_en));
+hidden_neuron neuron_hid6(.spike_in(ctrl_spk), .addr_in(ctrl_addr),
+	.clk(clk), .resetn(resetn), .spike_out(hid_spk6), .ack_in(hid_ack6), .timer_en(timer_en));
+hidden_neuron neuron_hid7(.spike_in(ctrl_spk), .addr_in(ctrl_addr),
+	.clk(clk), .resetn(resetn), .spike_out(hid_spk7), .ack_in(hid_ack7), .timer_en(timer_en));
 
 wire [7:0] hid_spk;
-assign hid_spk = {hid_spk0, hid_spk1, hid_spk2, hid_spk3, hid_spk4, hid_spk5, hid_spk6, hid_spk7};
+assign hid_spk = {hid_spk7, hid_spk6, hid_spk5, hid_spk4, hid_spk3, hid_spk2, hid_spk1, hid_spk0};
 
 wire [7:0] hid_ack;
-assign hid_ack = {hid_ack0, hid_ack1, hid_ack2, hid_ack3, hid_ack4, hid_ack5, hid_ack6, hid_ack7};
+assign {hid_ack7, hid_ack6, hid_ack5, hid_ack4, hid_ack3, hid_ack2, hid_ack1, hid_ack0} = hid_ack;
+
+wire [2:0] out_ctrl_addr;
+wire out_ctrl_spk;
+output_controller out_controller(.spikes_in(hid_spk), .acks_out(hid_ack),
+	.addr_out(out_ctrl_addr), .spike_out(out_ctrl_spk));
 
 wire out_spk0, out_spk1, out_spk2, out_spk3, out_spk4, out_spk5;
-output_neuron neuron_out0(.spikes_in(hid_spk), .acks_out(hid_ack),
-	.clk(clk), .resetn(resetn), .spike_out(out_spk0));
-output_neuron neuron_out1(.spikes_in(hid_spk), .acks_out(hid_ack),
-	.clk(clk), .resetn(resetn), .spike_out(out_spk1));
-output_neuron neuron_out2(.spikes_in(hid_spk), .acks_out(hid_ack),
-	.clk(clk), .resetn(resetn), .spike_out(out_spk2));
-output_neuron neuron_out3(.spikes_in(hid_spk), .acks_out(hid_ack),
-	.clk(clk), .resetn(resetn), .spike_out(out_spk3));
-output_neuron neuron_out4(.spikes_in(hid_spk), .acks_out(hid_ack),
-	.clk(clk), .resetn(resetn), .spike_out(out_spk4));
-output_neuron neuron_out5(.spikes_in(hid_spk), .acks_out(hid_ack),
-	.clk(clk), .resetn(resetn), .spike_out(out_spk5));
+output_neuron neuron_out0(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn),
+	.spike_out(out_spk0), .addr_in(out_ctrl_addr));
+output_neuron neuron_out1(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn),
+	.spike_out(out_spk1), .addr_in(out_ctrl_addr));
+output_neuron neuron_out2(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn),
+	.spike_out(out_spk2), .addr_in(out_ctrl_addr));
+output_neuron neuron_out3(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn),
+	.spike_out(out_spk3), .addr_in(out_ctrl_addr));
+output_neuron neuron_out4(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn), 
+	.spike_out(out_spk4), .addr_in(out_ctrl_addr));
+output_neuron neuron_out5(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn),
+	.spike_out(out_spk5), .addr_in(out_ctrl_addr));
 
 wire[5:0] out_spk;
-assign out_spk = {out_spk0, out_spk1, out_spk2, out_spk3, out_spk4, out_spk5};
+assign out_spk = {out_spk5, out_spk4, out_spk3, out_spk2, out_spk1, out_spk0};
 
 arbitrator arbit (.spikes_in(out_spk), .class_out(output_class), .no_spike(no_spike),
  .end_process(end_process), .resetn(resetn), .clk(clk), .timer_en(timer_en));

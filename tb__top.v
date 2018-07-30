@@ -1,5 +1,4 @@
 `timescale 1ns/1ns
-
 module snn__tb;
     reg clk = 1;
     always @(clk)
@@ -8,15 +7,6 @@ module snn__tb;
     reg reset;
     wire end_process, no_spike;
     wire [1:0] output_class;
-
-    initial begin
-      reset = 1;
-      @(posedge clk);
-      @(posedge clk);
-      @(posedge clk);
-      #1;
-      reset = 0;
-    end
 
     initial
     begin
@@ -39,10 +29,29 @@ module snn__tb;
       $readmemh("hex_files/ROM_out5.hex", uut.neuron_out5.ROM0.mem);
     end
 
+    initial begin
+      reset = 1;
+      @(posedge clk);
+      @(posedge clk);
+      @(posedge clk);
+      #1;
+      reset = 0;
+    end
+
+    // integer k;
+    // always @ ( uut.cnt_main.micro100 ) begin
+    // for(k=0;k<10;k=k+1)
+    // begin
+    //   $display("%x - %d - %x - %x",uut.hb_spk, uut.hb_addr_01,
+    //    uut.neuron_out0.IF0.membrane_potential, uut.out_spk);
+    //   @(posedge clk);
+    // end
+    // end
+
     always @ ( posedge clk ) begin
-      if(end_process) begin
-        $write("%x, ", output_class);
-        $write("%x \n", no_spike);
+      if(end_process == 1) begin
+        $display("class: %x, ", output_class);
+        $display("%x \n", no_spike);
         $stop;
       end
     end
