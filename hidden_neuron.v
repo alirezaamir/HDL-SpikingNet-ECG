@@ -9,21 +9,19 @@ input timer_en;
 output reg spike_out;
 input [7:0] addr_in;
 
-wire [7:0] ROM_address;
-wire enable;
+reg [7:0] ROM_address;
+reg enable;
 
 wire model_spike;
 wire [data_bit:0] ROM_out;
+reg [data_bit:0] IF_in;
 
-IF_neuron_hidden IF0 (.clk(clk), .resetn(resetn), .input_current(ROM_out),
+IF_neuron_hidden IF0 (.clk(clk), .resetn(resetn), .input_current(IF_in),
                 .spike(model_spike), .timer_en(timer_en));
 defparam IF0.n_bit = 7;
 
 ROMFile_hidden ROM0 (.address(ROM_address), .data(ROM_out), .read_en(enable));
 defparam ROM0.n_bit = data_bit;
-
-assign ROM_address = addr_in;
-assign enable = spike_in;
 
 always@(posedge clk)
 begin
@@ -34,6 +32,12 @@ begin
       spike_out <= 1;
     else if(ack_in)
       spike_out <= 0;
+end
+
+always @ ( posedge clk ) begin
+  ROM_address <= addr_in;
+  enable <= spike_in;
+  IF_in <= ROM_out;
 end
 
 endmodule
@@ -55,7 +59,7 @@ endmodule
 module IF_neuron_hidden(clk, resetn, input_current, spike, timer_en);
 parameter n_bit = 7;
 parameter theta = 10'b0101000000;
-parameter refractory = 10;
+parameter refractory = 0;
 parameter max_bit = 10;
 
 input clk, resetn;
@@ -67,7 +71,7 @@ wire [max_bit:0] add_out;
 wire overflow;
 reg [max_bit:0] membrane_potential;
 wire threshold_enable;
-reg [3:0] ref_counter;
+reg [1:0] ref_counter;
 
 assign {overflow,add_out} = (resetn | spike) ? 0 :
               (membrane_potential + input_current);

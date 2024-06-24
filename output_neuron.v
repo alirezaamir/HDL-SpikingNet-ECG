@@ -12,14 +12,19 @@ assign ROM_address = addr_in;
 wire enable;
 
 wire [data_bit:0] ROM_out;
+reg [data_bit:0] IF_in;
 
-IF_neuron_out IF0 (.clk(clk), .resetn(resetn), .input_current(ROM_out), .spike(spike_out));
+IF_neuron_out IF0 (.clk(clk), .resetn(resetn), .input_current(IF_in), .spike(spike_out));
 defparam IF0.n_bit = data_bit;
 
 ROMFile_out ROM0 (.address(ROM_address), .data(ROM_out), .read_en(enable));
 defparam ROM0.n_bit = data_bit;
 
 assign enable = spike_in;
+
+always @ ( posedge clk ) begin
+  IF_in <= ROM_out;
+end
 
 endmodule
 

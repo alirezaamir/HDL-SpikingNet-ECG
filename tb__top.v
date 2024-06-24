@@ -2,15 +2,26 @@
 module snn__tb;
     reg clk = 1;
     always @(clk)
-      clk <= #25 ~clk;
+      clk <= #500 ~clk;
 
     reg reset;
     wire end_process, no_spike;
     wire [1:0] output_class;
+    reg [5:0] data_inputs [0:256*500-1];
+    integer k, num;
+    integer file;
+    integer p_time, mean_time;
 
     initial
     begin
-      $readmemh("hex_files/input_data.hex", uut.in_period);
+      file=$fopen("DataOut.txt", "w");
+      num = 0;
+      p_time = 0;
+      mean_time = 0;
+      $readmemh("hex_files/input_data.hex", data_inputs);
+      for (k=0; k< 256; k= k+1) begin
+        uut.in_period[k] <= data_inputs[k];
+      end
 
       $readmemh("hex_files/ROM_hid0.hex", uut.neuron_hid0.ROM0.mem);
       $readmemh("hex_files/ROM_hid1.hex", uut.neuron_hid1.ROM0.mem);
@@ -50,9 +61,25 @@ module snn__tb;
 
     always @ ( posedge clk ) begin
       if(end_process == 1) begin
-        $display("class: %x, ", output_class);
-        $display("%x \n", no_spike);
-        $stop;
+        $display("%d : %d,%b,\t%t", num, output_class, no_spike, $time - p_time);
+	mean_time = mean_time +  $time - p_time;
+	$display("%f" , mean_time/num);
+	p_time = $time;
+        $fwrite(file, "%d,%b\n",output_class, no_spike);
+        reset = 1;
+        num = num +1;
+        if (num == 500)
+          $finish;
+        for (k=0; k< 256; k= k+1) begin
+          uut.in_period[k] <= data_inputs[256*num + k];
+        end
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        #1;
+        reset = 0;
+        // $display("%x \n", no_spike);
+        // $stop;
       end
     end
 

@@ -136,7 +136,7 @@ wire	in_ack00_00,	in_ack01_00,	in_ack02_00,	in_ack03_00,
   	in_ack08_15,	in_ack09_15,	in_ack10_15,	in_ack11_15,
   	in_ack12_15,	in_ack13_15,	in_ack14_15,	in_ack15_15;
 
-reg [9:0] in_period[0:255];
+reg [3:0] in_period[0:255];
 
 input_neuron neuron_in000 (.period(in_period[0]), .clk(clk), .ack_in(in_ack00_00),
 		.spike(in_spk00_00), .resetn(resetn), .timer_en(timer_en));
@@ -886,7 +886,7 @@ assign {hid_ack7, hid_ack6, hid_ack5, hid_ack4, hid_ack3, hid_ack2, hid_ack1, hi
 
 wire [2:0] out_ctrl_addr;
 wire out_ctrl_spk;
-output_controller out_controller(.spikes_in(hid_spk), .acks_out(hid_ack),
+output_controller out_controller(.clk(clk), .spikes_in(hid_spk), .acks_out(hid_ack),
 	.addr_out(out_ctrl_addr), .spike_out(out_ctrl_spk));
 
 wire out_spk0, out_spk1, out_spk2, out_spk3, out_spk4, out_spk5;
@@ -898,7 +898,7 @@ output_neuron neuron_out2(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn),
 	.spike_out(out_spk2), .addr_in(out_ctrl_addr));
 output_neuron neuron_out3(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn),
 	.spike_out(out_spk3), .addr_in(out_ctrl_addr));
-output_neuron neuron_out4(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn), 
+output_neuron neuron_out4(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn),
 	.spike_out(out_spk4), .addr_in(out_ctrl_addr));
 output_neuron neuron_out5(.spike_in(out_ctrl_spk), .clk(clk), .resetn(resetn),
 	.spike_out(out_spk5), .addr_in(out_ctrl_addr));

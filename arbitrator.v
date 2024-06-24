@@ -1,5 +1,5 @@
 module arbitrator(spikes_in, class_out, no_spike, end_process, resetn, clk, timer_en);
-parameter duration = 300;
+parameter duration = 12;
 input clk, resetn;
 input [5:0] spikes_in;
 input timer_en;
@@ -8,7 +8,7 @@ output wire end_process;
 output reg [1:0] class_out;
 
 wire spike_enable;
-reg [8:0] counter;
+reg [3:0] counter;
 
 assign spike_enable = (|spikes_in);
 assign no_spike = ~(|counter);

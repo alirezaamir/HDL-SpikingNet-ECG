@@ -1,11 +1,11 @@
 module input_neuron(period, clk, ack_in, spike, resetn, timer_en);
-input [9:0] period;
+input [3:0] period;
 input clk, resetn;
 input ack_in;
 input timer_en;
 output reg spike;
 
-reg[9:0] counter;
+reg[3:0] counter;
 wire timer_out;
 
 assign timer_out = ~(|counter);
